@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Поиск репозиториев</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <!-- Секция поиска -->
+      <section class="search-section">
+        <div class="search-wrapper">
+          <input 
+            class="search-input" 
+            id="search__input" 
+            type="text" 
+            placeholder="Поиск репозиториев..." 
+            aria-label="Введите название репозитория"
+          />
+          <div class="loader" aria-hidden="true">Загрузка...</div>
+          <ul class="search-results" aria-live="polite"></ul>
+        </div>
+      </section>
+      
+      <!-- Секция для выбранных репозиториев -->
+      <section class="details-section">
+        <div class="article" aria-live="polite" aria-label="Подробности о репозиториях"></div>
+      </section>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
